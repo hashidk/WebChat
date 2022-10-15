@@ -1,2 +1,4 @@
 # WebChat
- Chat application using socket.io, mongoDB and cloudinary
+### Basic chat application using socket.io, mongoDB and cloudinary
+
+### See demo: https://chatweb-wm.herokuapp.com/
