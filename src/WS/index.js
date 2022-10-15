@@ -11,7 +11,7 @@ const config_cors = {
 function setUpWS(server) {
     
     const io = socketio(server, {
-      // cors: config_cors, 
+      cors: config_cors, 
       path: "/ws/socket.io"  
     })
 

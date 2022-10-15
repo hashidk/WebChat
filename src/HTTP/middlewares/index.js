@@ -20,7 +20,7 @@ morgan.token('id', function getId (req) {
 })
 
 function mw(app) {
-    // app.use(cors(config_cors))
+    app.use(cors(config_cors))
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(bodyParser.json())
     app.use(cookieParser());
