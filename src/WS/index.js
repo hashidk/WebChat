@@ -4,14 +4,14 @@ const controllers = require('./controllers')
 const { allow_cors } = require('../Utils')
 
 const config_cors = {
-  // origin: allow_cors,
+  origin: allow_cors,
   credentials: true
 }
 
 function setUpWS(server) {
     
     const io = socketio(server, {
-      cors: config_cors, 
+      // cors: config_cors, 
       path: "/ws/socket.io"  
     })
 

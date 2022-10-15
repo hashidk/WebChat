@@ -10,8 +10,8 @@ require('dotenv').config()
 const SECRET_KEY = process.env.SECRET_KEY
 const config_cors = {
   credentials: true,
-  // preflightContinue: true,
-  // origin: allow_cors,
+  preflightContinue: true,
+  origin: allow_cors,
   methods: ['GET','POST','DELETE','UPDATE','PUT']
 }
 
@@ -20,7 +20,7 @@ morgan.token('id', function getId (req) {
 })
 
 function mw(app) {
-    app.use(cors(config_cors))
+    // app.use(cors(config_cors))
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(bodyParser.json())
     app.use(cookieParser());
