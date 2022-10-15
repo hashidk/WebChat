@@ -4,7 +4,7 @@ const controllers = require('./controllers')
 const { allow_cors } = require('../Utils')
 
 const config_cors = {
-  origin: allow_cors,
+  // origin: allow_cors,
   credentials: true
 }
 
