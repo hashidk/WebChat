@@ -10,7 +10,8 @@ const SECRET_KEY = process.env.SECRET_KEY
 const config_cors = {
   credentials: true,
   preflightContinue: true,
-  origin: "https://chatweb-wm.herokuapp.com"
+  origin: "*",
+  methods: ['GET','POST','DELETE','UPDATE','PUT']
 }
 
 morgan.token('id', function getId (req) {
