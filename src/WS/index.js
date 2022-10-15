@@ -1,9 +1,10 @@
 const socketio = require('socket.io')
 const middlewares = require('./middlewares')
 const controllers = require('./controllers')
+const { allow_cors } = require('../Utils')
 
 const config_cors = {
-  origin: "*",
+  origin: allow_cors,
   credentials: true
 }
 

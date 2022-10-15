@@ -3,14 +3,15 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");
-const cors = require('cors')
+const cors = require('cors');
+const { allow_cors } = require('../../Utils');
 require('dotenv').config()
 
 const SECRET_KEY = process.env.SECRET_KEY
 const config_cors = {
   credentials: true,
   preflightContinue: true,
-  origin: "*",
+  origin: allow_cors,
   methods: ['GET','POST','DELETE','UPDATE','PUT']
 }
 

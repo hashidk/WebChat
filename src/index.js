@@ -52,7 +52,7 @@ data.connDB().then(async resp => {
 
         const io = ws.setUpWS(httpServer)
 
-        httpServer.listen(app.get('port'), '0.0.0.0', function() {
+        httpServer.listen(app.get('port'), function() {
             console.log(`Servidor corriendo en: http://localhost:${app.get('port')}`);
         });
     }else{
