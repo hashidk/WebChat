@@ -3,7 +3,7 @@ const middlewares = require('./middlewares')
 const controllers = require('./controllers')
 
 const config_cors = {
-  origin: "https://webchatwm.herokuapp.com/",
+  origin: "https://chatweb-wm.herokuapp.com",
   credentials: true
 }
 
